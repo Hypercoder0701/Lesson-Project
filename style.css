@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  width: 100%;
+  background: #0a0c1c;
+  font-family: Inter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container {
+  width: 1110px;
+  height: 446px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #1b1937;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 20px 20px -10px rgba(23, 25, 41, 0.2);
+}
+.description {
+  padding: 72px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.topic {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 122.222%;
+  padding-bottom: 25px;
+}
+.topic span {
+  color: #ab5cdb;
+}
+.info {
+  color: #ffffffc9;
+  padding-right: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 166.667%;
+}
+.bg-image {
+  width: 50%;
+  height: 100%;
+  background-image: url(./images/img-bg-left.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #9d00ff;
+}
+.stats {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 72px;
+  color: #fff;
+  gap: 80px;
+}
+.stats div {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: 700;
+}
+.stats span {
+  color: #fff;
+  font-size: 8px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 208.333%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .main-container {
+    width: 100vw;
+    height: 80vh;
+    display: grid;
+    justify-items: center;
+    align-items: start;
+    grid-template-columns: 100vw;
+    grid-template-rows: 30% 70%;
+    margin: 0 24px;
+  }
+  .bg-image {
+    width: 100%;
+    grid-row: 1/2;
+  }
+  .description {
+    width: 100%;
+    grid-row: 2/-1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .info{
+    padding: 0;
+    text-align: center;
+  }
+  .stats{
+    flex-direction: column;
+    gap: 24px;
+  }
+}
